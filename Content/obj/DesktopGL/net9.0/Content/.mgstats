@@ -1,0 +1,10 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/Betzabe/Documents/SalesManGame/Content/CardSprite.png","C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/CardSprite.xnb","TextureProcessor","Texture2DContent",305,16469,0.1433548
+"C:/Users/Betzabe/Documents/SalesManGame/Content/CustSheet.png","C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/CustSheet.xnb","TextureProcessor","Texture2DContent",2032,196693,0.0160781
+"C:/Users/Betzabe/Documents/SalesManGame/Content/File.spritefont","C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/File.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21529,0.1001263
+"C:/Users/Betzabe/Documents/SalesManGame/Content/HeavySwing.wav","C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/HeavySwing.xnb","SoundEffectProcessor","SoundEffectContent",46790,46851,3.2603145
+"C:/Users/Betzabe/Documents/SalesManGame/Content/John Bartmann - Gameshow Brazz.mp3","C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/John Bartmann - Gameshow Brazz.xnb","SongProcessor","SongContent",7177987,148,7.754093
+"C:/Users/Betzabe/Documents/SalesManGame/Content/MainMenu.png","C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/MainMenu.xnb","TextureProcessor","Texture2DContent",809,20565,0.0037637
+"C:/Users/Betzabe/Documents/SalesManGame/Content/Roboto-BlackItalic.ttf","C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/Roboto-BlackItalic.xnb","FontDescriptionProcessor","SpriteFontContent",166780,21529,0.160472
+"C:/Users/Betzabe/Documents/SalesManGame/Content/SaleMan-Sheet.png","C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/SaleMan-Sheet.xnb","TextureProcessor","Texture2DContent",6823,798805,0.025341
+"C:/Users/Betzabe/Documents/SalesManGame/Content/Tree.png","C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/Tree.xnb","TextureProcessor","Texture2DContent",542,8277,0.0021652

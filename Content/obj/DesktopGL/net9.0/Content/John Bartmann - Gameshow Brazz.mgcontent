@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/Users/Betzabe/Documents/SalesManGame/Content/John Bartmann - Gameshow Brazz.mp3</SourceFile>
+  <SourceTime>2026-10-03T16:27:24.0230027-05:00</SourceTime>
+  <DestFile>C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/John Bartmann - Gameshow Brazz.xnb</DestFile>
+  <DestTime>2026-10-03T16:38:28.3863244-05:00</DestTime>
+  <Importer>Mp3Importer</Importer>
+  <ImporterTime>2026-08-14T16:50:10-05:00</ImporterTime>
+  <Processor>SongProcessor</Processor>
+  <ProcessorTime>2026-08-14T16:50:10-05:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Parameters>
+    <Key>Version</Key>
+    <Value>3.8.5.1</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput>
+    <string>C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/John Bartmann - Gameshow Brazz.ogg</string>
+  </BuildOutput>
+</PipelineBuildEvent>

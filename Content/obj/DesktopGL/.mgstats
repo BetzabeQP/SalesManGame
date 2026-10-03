@@ -1,0 +1,10 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"c:/Users/Betzabe/Documents/SalesManGame/Content/CardSprite.png","c:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/CardSprite.xnb","TextureProcessor","Texture2DContent",305,16469,0.1260593
+"c:/Users/Betzabe/Documents/SalesManGame/Content/CustSheet.png","c:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/CustSheet.xnb","TextureProcessor","Texture2DContent",2032,196693,0.0147249
+"c:/Users/Betzabe/Documents/SalesManGame/Content/File.spritefont","c:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/File.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21529,0.0776575
+"c:/Users/Betzabe/Documents/SalesManGame/Content/HeavySwing.wav","c:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/HeavySwing.xnb","SoundEffectProcessor","SoundEffectContent",46790,46851,2.4356022
+"c:/Users/Betzabe/Documents/SalesManGame/Content/John Bartmann - Gameshow Brazz.mp3","c:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/John Bartmann - Gameshow Brazz.xnb","SongProcessor","SongContent",7177987,148,7.8995643
+"c:/Users/Betzabe/Documents/SalesManGame/Content/MainMenu.png","c:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/MainMenu.xnb","TextureProcessor","Texture2DContent",809,20565,0.0026549
+"c:/Users/Betzabe/Documents/SalesManGame/Content/Roboto-BlackItalic.ttf","c:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Roboto-BlackItalic.xnb","FontDescriptionProcessor","SpriteFontContent",166780,21529,0.0188435
+"c:/Users/Betzabe/Documents/SalesManGame/Content/SaleMan-Sheet.png","c:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/SaleMan-Sheet.xnb","TextureProcessor","Texture2DContent",6823,798805,0.0243981
+"c:/Users/Betzabe/Documents/SalesManGame/Content/Tree.png","c:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Tree.xnb","TextureProcessor","Texture2DContent",542,8277,0.0028992
