@@ -24,7 +24,7 @@ public class Game1 : Game
         base.Initialize();
         screenManager = new ScreenManager(this);
         screenManager.Initialize();
-        screenManager.AddScreen(new MainMenu(this, _graphics.GraphicsDevice, screenManager));
+        screenManager.AddScreen(new MainMenuStart(this, _graphics.GraphicsDevice, screenManager));
     }
 
     protected override void LoadContent()

@@ -44,3 +44,7 @@ C:\Users\Betzabe\Documents\SalesManGame\bin\Debug\net9.0\Content\Roboto-BlackIta
 C:\Users\Betzabe\Documents\SalesManGame\bin\Debug\net9.0\Content\HeavySwing.xnb
 C:\Users\Betzabe\Documents\SalesManGame\bin\Debug\net9.0\Content\John Bartmann - Gameshow Brazz.ogg
 C:\Users\Betzabe\Documents\SalesManGame\bin\Debug\net9.0\Content\John Bartmann - Gameshow Brazz.xnb
+C:\Users\Betzabe\Documents\SalesManGame\bin\Debug\net9.0\Content\CloudA1.xnb
+C:\Users\Betzabe\Documents\SalesManGame\bin\Debug\net9.0\Content\SkyA1.xnb
+C:\Users\Betzabe\Documents\SalesManGame\bin\Debug\net9.0\Content\Sun.xnb
+C:\Users\Betzabe\Documents\SalesManGame\obj\Debug\net9.0\Game.sourcelink.json

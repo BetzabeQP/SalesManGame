@@ -1,13 +1,19 @@
 using System;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
 namespace SalesManGame;
-public class MainMenu: GameScreen
+public class MainMenuStart: GameScreen
 {
     private bool debounce = false;
     string text = "start";
+    City city;
+    SkyEffect sky;
+    SunGoingOver sun;
+    CloudAcross cloud;
+    private ContentManager content;
     ScreenManager screenManager;
     private KeyboardState keyboardState;
     private bool confirm;
@@ -17,18 +23,24 @@ public class MainMenu: GameScreen
     //Rectangle exit;
     Game game;
     GraphicsDevice graphics;
-    public MainMenu(Game parentGame, GraphicsDevice gD, ScreenManager sM)
+    public MainMenuStart(Game parentGame, GraphicsDevice gD, ScreenManager sM)
     {
         confirm = false;
         screenManager = sM;
         game = parentGame;
         graphics = gD;
+        content = new ContentManager(game.Services);
+        content.RootDirectory = "Content";
         start = new Rectangle(40, 80,100,20);
     }
     public void LoadContent()
     {
       texture = new Texture2D(graphics, 1, 1);
       texture.SetData(new[]{Color.White});
+      sky.LoadContent(content);
+      sun.LoadContent(graphics, content);
+      cloud.LoadContent(content);
+      city.LoadContent(content);
     }
     public override void HandleInput(GameTime gameTime, InputState input)
     {
@@ -66,18 +78,29 @@ public class MainMenu: GameScreen
         }
         else confirm=false;
         if(mouseState.RightButton == ButtonState.Pressed) text = "start";
+        cloud.Update(gameTime);
+        sun.Update(gameTime);
+        sky.Update(sun.GetSunAngle());
             
     }
     public override void Activate()
     {
         base.Activate();
+        sky = new();
+        sun = new();
+        cloud = new();
+        city = new();
         this.LoadContent();
     }
     public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
     {
         if(this.IsActive ==false) return;
-        spriteBatch.Begin();
+        spriteBatch.Begin(blendState: BlendState.AlphaBlend);
         spriteBatch.Draw(texture,start,new Rectangle(0,0,1,1),Color.Blue);
+        sky.Draw(gameTime, spriteBatch);
+        sun.Draw(gameTime, spriteBatch);
+        city.Draw(gameTime,spriteBatch);
+        cloud.Draw(gameTime, spriteBatch);
         spriteBatch.DrawString(screenManager.MenuFont, text, new Vector2(start.X, start.Y), Color.White);
         //spriteBatch.Draw(texture, new Rectangle(0,0,50,50), Color.Red);
         spriteBatch.End();
