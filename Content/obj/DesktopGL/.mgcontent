@@ -5,21 +5,77 @@
   <Config />
   <SourceFiles>
     <File>c:/Users/Betzabe/Documents/SalesManGame/Content/../../../OneDrive/Pictures/Sprite/Sun.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/AllNaty.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/Banter.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/Bar.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/Benefits.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/BodyPurging.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/BYOB.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/CarAge.png</File>
     <File>c:/Users/Betzabe/Documents/SalesManGame/Content/CardSprite.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/CelluarHealth.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/Charm.png</File>
     <File>c:/Users/Betzabe/Documents/SalesManGame/Content/CloudA1.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/Conviencing.png</File>
     <File>c:/Users/Betzabe/Documents/SalesManGame/Content/CustSheet.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/Daily.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/Dialogue.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/Explaination.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/Exposition.png</File>
     <File>c:/Users/Betzabe/Documents/SalesManGame/Content/File.spritefont</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/Filling.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/FreeRange.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/GlutenFree.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/HasChar.png</File>
     <File>c:/Users/Betzabe/Documents/SalesManGame/Content/HeavySwing.wav</File>
     <File>c:/Users/Betzabe/Documents/SalesManGame/Content/John Bartmann - Gameshow Brazz.mp3</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/Leo.png</File>
     <File>c:/Users/Betzabe/Documents/SalesManGame/Content/MainMenu.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/MechSpecial.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/OneTimeOffer.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/PureBreed.png</File>
     <File>c:/Users/Betzabe/Documents/SalesManGame/Content/Roboto-BlackItalic.ttf</File>
     <File>c:/Users/Betzabe/Documents/SalesManGame/Content/SaleMan-Sheet.png</File>
     <File>c:/Users/Betzabe/Documents/SalesManGame/Content/SkyA1.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/Softball.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/SponserBy.png</File>
     <File>c:/Users/Betzabe/Documents/SalesManGame/Content/Sun.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/TalkingPts.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/TeaCup.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/TearOff.png</File>
     <File>c:/Users/Betzabe/Documents/SalesManGame/Content/Tree.png</File>
+    <File>c:/Users/Betzabe/Documents/SalesManGame/Content/VetCheck.png</File>
   </SourceFiles>
   <DestFiles>
     <File>Sun.png</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

@@ -15,7 +15,7 @@ public class City
     }
     public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
     {
-        spriteBatch.Draw(houseTexture, new Vector2(0, 300), new Rectangle(0,0, 192, 100),Color.White, 0,new Vector2(0,0), scale:3f, SpriteEffects.None, 0);
-        spriteBatch.Draw(houseTexture, new Vector2(576, 300), new Rectangle(0,0, 128, 100),Color.White, 0,new Vector2(0,0), scale:3f, SpriteEffects.None, 0);
+        spriteBatch.Draw(houseTexture, new Vector2(0, 600), new Rectangle(0,0, 192, 100),Color.White, 0,new Vector2(0,0), scale:3f*2, SpriteEffects.None, 0);
+        spriteBatch.Draw(houseTexture, new Vector2(576*2, 600), new Rectangle(0,0, 128, 100),Color.White, 0,new Vector2(0,0), scale:3f*2, SpriteEffects.None, 0);
     }
 }

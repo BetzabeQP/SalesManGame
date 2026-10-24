@@ -13,6 +13,8 @@ public class Game1 : Game
     public Game1()
     {
         _graphics = new GraphicsDeviceManager(this);
+        _graphics.PreferredBackBufferHeight *= 2;
+        _graphics.PreferredBackBufferWidth *= 2;
         Content.RootDirectory = "Content";
         IsMouseVisible = true;
     }
@@ -25,6 +27,7 @@ public class Game1 : Game
         screenManager = new ScreenManager(this);
         screenManager.Initialize();
         screenManager.AddScreen(new MainMenuStart(this, _graphics.GraphicsDevice, screenManager));
+
     }
 
     protected override void LoadContent()

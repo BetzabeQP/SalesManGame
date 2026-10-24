@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>c:/Users/Betzabe/Documents/SalesManGame/Content/CardSprite.png</SourceFile>
-  <SourceTime>2026-10-02T21:21:45.784941-05:00</SourceTime>
+  <SourceTime>2026-10-23T21:34:10.4852386-05:00</SourceTime>
   <DestFile>c:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/CardSprite.xnb</DestFile>
-  <DestTime>2026-10-16T23:53:27.8208104-05:00</DestTime>
+  <DestTime>2026-10-24T14:10:34.7066609-05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2026-08-14T16:50:10-05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

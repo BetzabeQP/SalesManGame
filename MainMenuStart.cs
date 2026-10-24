@@ -31,7 +31,7 @@ public class MainMenuStart: GameScreen
         graphics = gD;
         content = new ContentManager(game.Services);
         content.RootDirectory = "Content";
-        start = new Rectangle(40, 80,100,20);
+        start = new Rectangle(40*2, 80,100*2,20*2);
     }
     public void LoadContent()
     {
@@ -62,7 +62,7 @@ public class MainMenuStart: GameScreen
                     if(debounce == false) {
                     debounce = true;
                     this.ScreenState = ScreenState.TransitionOff;
-                    LevelScreenManager levelScreenManager =  new LevelScreenManager(game, graphics);
+                    SellingScreen levelScreenManager =  new SellingScreen(game, graphics);
                     screenManager.AddScreen(levelScreenManager);}
                     //text = "clicked";
                 }
@@ -95,13 +95,13 @@ public class MainMenuStart: GameScreen
     public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
     {
         if(this.IsActive ==false) return;
-        spriteBatch.Begin(blendState: BlendState.AlphaBlend);
+        spriteBatch.Begin();
         spriteBatch.Draw(texture,start,new Rectangle(0,0,1,1),Color.Blue);
         sky.Draw(gameTime, spriteBatch);
         sun.Draw(gameTime, spriteBatch);
         city.Draw(gameTime,spriteBatch);
         cloud.Draw(gameTime, spriteBatch);
-        spriteBatch.DrawString(screenManager.MenuFont, text, new Vector2(start.X, start.Y), Color.White);
+        spriteBatch.DrawString(screenManager.MenuFont, text, new Vector2(start.X, start.Y), Color.White, 0f, new Vector2(), 2f, SpriteEffects.None, 0f);
         //spriteBatch.Draw(texture, new Rectangle(0,0,50,50), Color.Red);
         spriteBatch.End();
     }

@@ -9,7 +9,7 @@ public class CloudAcross
     Texture2D texture;
     const float speed = 40.0f;
     private float posX = 0;
-    private const float scale =2.5f;
+    private const float scale =2.5f*2;
     public void LoadContent(ContentManager content)
     {
         if(content is null) return;

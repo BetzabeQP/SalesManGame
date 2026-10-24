@@ -22,8 +22,8 @@ public class SkyEffect
     public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
     {
         //spriteBatch.Begin(blendState:BlendState.Additive);
-        spriteBatch.Draw(skyTexture, new Vector2(0, 0),  new Rectangle(0,0,192,128),curColor, 0,new Vector2(0,0), scale:3f, SpriteEffects.None, 0);
-        spriteBatch.Draw(skyTexture, new Vector2(0, 0),  new Rectangle(0,0,108,128),curColor, 0,new Vector2(-192,0), scale:3f, SpriteEffects.None, 0);
+        spriteBatch.Draw(skyTexture, new Vector2(0, 0),  new Rectangle(0,0,192,128),curColor, 0,new Vector2(0,0), scale:3f*2, SpriteEffects.None, 0);
+        spriteBatch.Draw(skyTexture, new Vector2(0, 0),  new Rectangle(0,0,108,128),curColor, 0,new Vector2(-192,0), scale:3f*2, SpriteEffects.None, 0);
         //spriteBatch.Draw(cloudTexture, new Vector2(100, 300), curColor);
         //spriteBatch.End();
     }

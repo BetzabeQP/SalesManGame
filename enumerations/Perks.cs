@@ -1,6 +1,8 @@
-public enum Perks
+public enum Perk
 {
     Religious,
     Exotic,
-    Disception
+    Disception,
+    Multiplier,
+    Repeater
 }
