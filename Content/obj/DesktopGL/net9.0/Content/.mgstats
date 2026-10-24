@@ -1,5 +1,5 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/Betzabe/Documents/SalesManGame/Content/../../../OneDrive/Pictures/Sprite/Sun.png","C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/Sun.xnb","TextureProcessor","Texture2DContent",731,4181,0.1210638
+"C:/Users/Betzabe/Documents/SalesManGame/Content/../../../OneDrive/Pictures/Sprite/Sun.png","C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/Sun.xnb","TextureProcessor","Texture2DContent",731,4181,0.179258
 "C:/Users/Betzabe/Documents/SalesManGame/Content/AllNaty.png","C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/AllNaty.xnb","TextureProcessor","Texture2DContent",448,3985,0.004235
 "C:/Users/Betzabe/Documents/SalesManGame/Content/Banter.png","C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/Banter.xnb","TextureProcessor","Texture2DContent",241,3985,0.0041381
 "C:/Users/Betzabe/Documents/SalesManGame/Content/Bar.png","C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/Bar.xnb","TextureProcessor","Texture2DContent",155,5269,0.0036206
@@ -34,7 +34,7 @@ Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Siz
 "C:/Users/Betzabe/Documents/SalesManGame/Content/SkyA1.png","C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/SkyA1.xnb","TextureProcessor","Texture2DContent",338,49237,0.0072646
 "C:/Users/Betzabe/Documents/SalesManGame/Content/Softball.png","C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/Softball.xnb","TextureProcessor","Texture2DContent",309,3985,0.0018965
 "C:/Users/Betzabe/Documents/SalesManGame/Content/SponserBy.png","C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/SponserBy.xnb","TextureProcessor","Texture2DContent",539,3985,0.0017992
-"C:/Users/Betzabe/Documents/SalesManGame/Content/Sun.png","C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/Sun.xnb","TextureProcessor","Texture2DContent",731,4181,0.0031713
+"C:/Users/Betzabe/Documents/SalesManGame/Content/Sun.png","C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/Sun.xnb","TextureProcessor","Texture2DContent",731,4181,0.0060831
 "C:/Users/Betzabe/Documents/SalesManGame/Content/TalkingPts.png","C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/TalkingPts.xnb","TextureProcessor","Texture2DContent",323,3985,0.002245
 "C:/Users/Betzabe/Documents/SalesManGame/Content/TeaCup.png","C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/TeaCup.xnb","TextureProcessor","Texture2DContent",419,3985,0.0022306
 "C:/Users/Betzabe/Documents/SalesManGame/Content/TearOff.png","C:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Content/TearOff.xnb","TextureProcessor","Texture2DContent",225,4181,0.0018977
