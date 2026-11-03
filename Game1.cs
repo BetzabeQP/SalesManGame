@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System.Diagnostics;
 
 namespace SalesManGame;
 
@@ -26,7 +27,11 @@ public class Game1 : Game
         base.Initialize();
         screenManager = new ScreenManager(this);
         screenManager.Initialize();
-        screenManager.AddScreen(new MainMenuStart(this, _graphics.GraphicsDevice, screenManager));
+        var persistentScreen = new PersistentScreen(this,_graphics.GraphicsDevice, screenManager);
+        //System.Environment.FailFast("Critical application failure: Manual panic triggered.");
+        screenManager.AddScreen(new MainMenuStart(this, _graphics.GraphicsDevice, screenManager){persistentScreen = persistentScreen});
+        screenManager.AddScreen(persistentScreen);
+
 
     }
 

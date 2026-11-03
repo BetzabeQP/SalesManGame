@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
@@ -97,7 +98,7 @@ public class ScreenManager: DrawableGameComponent
             if (screen.ScreenState == ScreenState.TransitionOn || screen.ScreenState == ScreenState.Active)
             {
                 // if this is the first active screen, let it handle input 
-                if (!otherScreenHasFocus)
+                //if (!otherScreenHasFocus)
                 {
                     screen.HandleInput(gameTime, _input);
                     otherScreenHasFocus = true;
@@ -116,6 +117,7 @@ public class ScreenManager: DrawableGameComponent
     /// <param name="gameTime">An object representing time in the game</param>
     public override void Draw(GameTime gameTime)
     {
+        var sortedScreens = _screens.OrderBy(s=>s.drawOrder);
         foreach(var screen in _screens)
         {
             if (screen.ScreenState == ScreenState.Hidden) continue;

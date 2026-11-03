@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>c:/Users/Betzabe/Documents/SalesManGame/Content/Daily.png</SourceFile>
-  <SourceTime>2026-10-22T22:55:22.4826396-05:00</SourceTime>
+  <SourceTime>2026-11-02T20:54:17.4885546-06:00</SourceTime>
   <DestFile>c:/Users/Betzabe/Documents/SalesManGame/Content/bin/DesktopGL/Daily.xnb</DestFile>
-  <DestTime>2026-10-24T14:10:34.7708875-05:00</DestTime>
+  <DestTime>2026-11-02T20:55:27.2034617-06:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2026-08-14T16:50:10-05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

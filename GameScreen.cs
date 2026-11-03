@@ -5,6 +5,7 @@ using Microsoft.Xna.Framework.Graphics;
 namespace SalesManGame;
 public abstract class GameScreen
 {
+    public int drawOrder=0;
         /// <summary>
     /// Indicates if this screen is a popup
     /// </summary>
@@ -58,7 +59,7 @@ public abstract class GameScreen
     /// <summary>
     /// Indicates if this screen is active
     /// </summary>
-    public bool IsActive => !_otherScreenHasFocus && (
+    public bool IsActive => (
         ScreenState == ScreenState.TransitionOn ||
         ScreenState == ScreenState.Active);
 

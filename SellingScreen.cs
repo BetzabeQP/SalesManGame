@@ -19,6 +19,7 @@ public class SellingScreen: GameScreen
     private const int ROUNDS = 4;
     private int round = 1;
     Animation animation;
+    private float sellingEndTime = 0f;
     private const int MAXCARDSSELECTED = 4;
     private SpriteFont fontShow;
     private SoundEffect cardSwitching;
@@ -36,11 +37,24 @@ public class SellingScreen: GameScreen
     MainChar mc;
     Customer granny;
     private Song backgroundSong;
-    public SellingScreen(Game game, GraphicsDevice gD)
+    private LevelSelectScreen levelSelection;
+    private GameState state =  GameState.Playing;
+    PersistentScreen persistentScreen;
+    int level; 
+    private enum GameState
+    {
+        Won,
+        Lost,
+        Playing
+    }
+    public SellingScreen(Game game, GraphicsDevice gD, int level, PersistentScreen ps, LevelSelectScreen levelseletion)
     {
         graphicsDevice = gD;
         content = new ContentManager(game.Services);
+        persistentScreen = ps;
+        levelSelection = levelseletion;
         content.RootDirectory = "Content";
+        this.level = level;
     }
     public override void HandleInput(GameTime gameTime, InputState input)
     {
@@ -114,6 +128,7 @@ public class SellingScreen: GameScreen
         if(inputState is null) return;
         if(_cardCurrent >= hand.Count) _cardCurrent = 0;
         var keyboardState = inputState.CurrentKeyboardStates[0];
+        persistentScreen.ScreenState = ScreenState.Active;
         /*if(keyboardState.IsKeyDown(Keys.Left)|| keyboardState.IsKeyDown(Keys.Right)
         ||keyboardState.IsKeyDown(Keys.A)|| keyboardState.IsKeyDown(Keys.D)) keyDown = true;
         if(keyDown)
@@ -121,7 +136,27 @@ public class SellingScreen: GameScreen
             if(keyboardState.IsKeyUp(Keys.Left) ||keyboardState.IsKeyUp(Keys.A)) {_cardCurrent--; keyDown=false;}
             if(keyboardState.IsKeyUp(Keys.Right) ||keyboardState.IsKeyUp(Keys.D)){ _cardCurrent++; keyDown=false;}
         }*/
-        if(round > ROUNDS) return;
+        if(round > ROUNDS)
+        {
+
+            if(state == GameState.Playing)
+            {
+                sellingEndTime = gameTime.ElapsedGameTime.Seconds;
+                if(points >= pointTarget) state = GameState.Won;
+                else state = GameState.Lost;
+            } 
+            else
+            {
+                //if((gameTime.ElapsedGameTime.Seconds-sellingEndTime) > 3f)
+                {
+                    persistentScreen.money += 20;
+                    persistentScreen.levels = Math.Max(persistentScreen.levels, level+1); 
+                    levelSelection.ScreenState = ScreenState.TransitionOn;
+                    ScreenManager.RemoveScreen(this);
+                }
+            }
+            return;
+        }
         PlayerIndex player;
         bool right = inputState.IsNewKeyPress(Keys.D, null, out player) || inputState.IsNewKeyPress(Keys.Right, null, out player);
         bool left = inputState.IsNewKeyPress(Keys.A, null, out player)|| inputState.IsNewKeyPress(Keys.Left, null, out player);
@@ -236,8 +271,18 @@ public class SellingScreen: GameScreen
         {
             hand[i].Draw(gameTime, spriteBatch);
         }
-        if(round > ROUNDS) spriteBatch.DrawString(fontShow, "Encounter End", new Vector2(200,100), Color.Beige, 0f, new Vector2(), 2f, SpriteEffects.None, 0f);
-        else spriteBatch.DrawString(fontShow, "Round " + round.ToString(), new Vector2(200,100), Color.Beige, 0f, new Vector2(), 2f, SpriteEffects.None, 0f);
+        switch (state)
+        {
+            case GameState.Lost:
+                spriteBatch.DrawString(fontShow, "Lost", new Vector2(200,100), Color.Beige, 0f, new Vector2(), 2f, SpriteEffects.None, 0f);
+                break;
+            case GameState.Won:
+                spriteBatch.DrawString(fontShow, "Won", new Vector2(200,100), Color.Beige, 0f, new Vector2(), 2f, SpriteEffects.None, 0f);
+                break;
+            case GameState.Playing:
+                spriteBatch.DrawString(fontShow, "Round " + round.ToString(), new Vector2(200,100), Color.Beige, 0f, new Vector2(), 2f, SpriteEffects.None, 0f);
+                break;    
+        }
         mc.Draw(gameTime, spriteBatch);
         //spriteBatch.Draw(texture, new Rectangle(0,0,50,50), Color.Red);
         spriteBatch.End();
