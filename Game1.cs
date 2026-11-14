@@ -7,6 +7,7 @@ namespace SalesManGame;
 
 public class Game1 : Game
 {
+    Quad quad;
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
     private ScreenManager screenManager;
@@ -38,6 +39,7 @@ public class Game1 : Game
     protected override void LoadContent()
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
+        quad = new Quad(this);
         // TODO: use this.Content to load your game content here
     }
 
@@ -56,6 +58,7 @@ public class Game1 : Game
         GraphicsDevice.Clear(Color.CornflowerBlue);
 
         // TODO: Add your drawing code here
+        quad.Draw();
         screenManager.Draw(gameTime);
         base.Draw(gameTime);
     }
